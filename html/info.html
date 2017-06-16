@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eshal's Information</title>
+       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>-->
+        <script src="../javascript/jquery-1.12.4.min.js"></script>
+        <script type="text/javascript"> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#info").slideToggle("slow");
+    });
+});
+</script>
+<style>
+body {
+        margin: 0 auto;
+        width: 300px;
+        padding: 0;
+        background-image: url("");
+            }
+ #flip {
+    padding: 6px;
+    text-align: center;
+    background-color: #cc0000;
+    color: white;
+    border:solid 2px lightyellow;
+    display: block;
+    padding: 5;
+    -webkit-box-shadow: 0 0 8px #FFD700;
+    -moz-box-shadow: 0 0 8px #FFD700;
+    box-shadow: 0 0 8px #FFD700;
+    cursor:pointer;
+}
+#info {
+    background-color: #ffffbd;
+    padding: 20px;
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:  oblique;
+    color: black;;
+    margin: 0 auto;
+    background-size:90% 90%;
+    
+}
+#goback p {
+    position: absolute;
+    bottom: 0px;
+    margin: 0 auto;
+   font-family: 'Times New Roman', Times, serif;
+   font-style: italic;
+}
+#goback {
+    margin-left: 60px;
+}
+#goback img {
+padding-right: 5px;
+margin-top: 10px;
+}
+        </style>
+    </head>
+    <body>
+        
+        <div id="info">
+            <ul>
+            <h2>Eshal and Her Family's Information</h2>
+				<li>Name: Eshal Mohammed</li> <li>Mother: Anam Mohammed</li>
+				<li>Father: Kieran Mohammed</li> <li>DOB: November 2, 2013</li>	
+				<li>Residence: Symrna, Delaware</li>
+                </ul>
+        </div>
+        <div id="flip">Click to see Eshal's Information</div>
+        <div id ="goback">
+            <p><a href="main.html" alt="For main page"><img src="../pics/infogbb.png" width= 45 height=45></a>Click On The Image For Main Page</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Main Page</title>
+		
+	 <script src="../javascript/jquery-1.12.4.min.js"></script>
+     
+	<script type="text/javascript">
+        /*java script code for sliding the information*/
+$(document).ready(function(){
+	
+$(".info").click(function(){
+                 $("#flip").slideToggle("slow");
+                 });
+
+$("#flip").click(function(){
+                 $("#information").slideToggle("slow");
+                 });
+                  
+$("#information").click(function(){
+                                   $("#information").slideToggle("slow");
+                                   });
+                  });
+	</script>
+    
+	<style>
+
+#information {
+    background-color: lightgoldenrodyellow;
+    border-radius: 25%;
+    padding: 27px;
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:  italic;
+    color: maroon;
+    margin: 0 auto;
+    width: 375px;
+    position: fixed;
+	top: 1px;
+  
+}
+#options {
+        height: 3em;
+    }
+#options ul {
+	list-style:none;
+	padding: 0;
+	margin: auto;
+    width: 23em;
+} 
+#options ul li {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    float: left;
+    margin-right:10px;
+    text-shadow:2px 2px lightgray;
+}
+#options ul li a { 	
+  display: inline-block;
+  padding: .5em; 	
+  border: 1px solid #ba89a8; 
+  border-radius: 1em;	
+  margin-top: 10px;
+}  
+#options ul a:link {
+	color:black;
+    background-color: white;
+  }
+#options ul a:visited {
+    color: black;
+  }
+#options ul a:focus {
+color:#FC6;
+}
+#options ul a:hover {
+	border: 1px solid #ba89a8;
+  }
+#options ul a:active { /* used when link has been visited*/
+    background-color:lightgray;
+}
+/*style for introduction*/
+#intro {
+	text-align: center;
+    margin: 2em 0 1em;
+}
+#intro h1 {
+	text-shadow: 3px 3px lightgray;
+	padding-top: 0em;
+    color: darkslateblue;
+}
+ #intro p {
+	font-style: oblique;
+    font-weight: bolder;
+    font-size: 20;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: lightseagreen;
+}
+/*copyright style*/
+p#copyright {
+    font-size: 12;
+  text-align: center;
+  margin-top: 5%;
+  color: darkslateblue;
+  font-weight: bolder;
+  text-shadow: 1px 1px lightblue;
+  }
+#flip {
+	display: none;
+    padding: 15px;
+    text-align: center;
+    background-color: lightcoral;
+    color: white;
+    border-radius: 30%;
+    -webkit-box-shadow: 0 0 8px #FFD700;
+    -moz-box-shadow: 0 0 8px #FFD700;
+    box-shadow: 0 0 8px black;
+    top: 1px;
+}
+img {
+    margin: 0 auto;
+    position: scroll;
+    border-radius: 10%;
+    border: 2px  dotted black;
+    margin-top: 10px;
+
+}
+    body{
+        background-image: url("../pics/main_images/back.JPG");
+        background-size: 50%;
+        background-position: absolute;
+        top: 0;
+        left: 0;
+    }
+	</style>
+	</head>
+		<body>
+			<div id = "intro">
+			<h1>Welcome to Eshal's Small World</h1>
+			<p><strong>Here you will find all the information about Eshal.
+            Click on each link to find more about her.</strong></p>
+            </div>
+          
+			<div id="options">
+			<ul>
+			<li class="info"><a href="#">Information</a>
+			<div id="information">
+				<ul>
+            	<h2>Eshal and Her Family's Information</h2>
+				<li>Name: Eshal Mohammed</li> <li>Mother: Anam Mohammed</li>
+				<li>Father: Kieran Mohammed</li> <li>DOB: November 2, 2013</li>	
+				<li>Residence: Symrna, Delaware</li>
+                </ul> </div>
+			</li>
+			<li><a href="pics.html">Pictures</a></li>
+			<li><a href="videos.html">Videos</a></li>
+			<li><a href="einfo.html">Contact</a></li>
+			</ul></div>
+			<div id="flip">Click to see Eshal's Information</div>
+			<br/>
+
+    <div class="images" style=" align:center">
+    <img class="mySlides" src="../pics/main_images/IMG_1313.JPG" width="375" height="375">
+	<img class="mySlides" src="../pics/main_images/IMG_1315.JPG" width="375" height="375">
+	<img class="mySlides" src="../pics/main_images/IMG_1316.JPG" width="375" height="375">
+	<img class="mySlides" src="../pics/main_images/IMG_1321.JPG" width="375" height="375">
+	<img class="mySlides" src="../pics/main_images/IMG_2205.JPG" width="375" height="375">
+	<img class="mySlides" src="../pics/main_images/IMG_2263.JPG" width="375" height="375">
+	<img class="mySlides" src="../pics/main_images/IMG_2285.JPG" width="375" height="375">	
+	<img class="mySlides" src="../pics/main_images/IMG_2943.JPG" width="375" height="375">	
+	<img class="mySlides" src="../pics/main_images/main.JPG" width="375" height="375">
+	<img class="mySlides" src="../pics/main_images/c.JPG" width="375" height="375">
+    <img class="mySlides" src="../pics/main_images/IMG_1157.JPG" width="375" height="375">
+    <img class="mySlides" src="../pics/main_images/IMG_1193.JPG" width="375" height="375">
+    <img class="mySlides" src="../pics/main_images/IMG_1285.JPG" width="375" height="375">
+    <img class="mySlides" src="../pics/main_images/IMG_1287.JPG" width="375" height="375">
+   
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000);
+}
+</script>
+			<p id="copyright">All content copyright &copy; Abu Butt, Inc. </p>
+		</body>
+	</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Eshal Images Page</title>
+        <style>
+        
+        h1 {
+                text-align: center;
+                font-variant: small-caps;
+                color: lightseagreen;
+                text-shadow: 2px 2px green;
+            }
+        p{
+            text-align: center;
+            font-size: 18px;
+            font-weight: bolder;
+            color: lightseagreen;
+            text-shadow: 1.5px 1.5px green;
+            text-transform: capitalize;
+        }
+        .rotate {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/*.w3-btn-floating {
+    text-align: center;
+    margin: 0 auto;
+    position: scroll;
+    height: auto;
+    overflow: hidden;
+    margin-left: 475px;
+    margin-top: 300px;
+}
+.w3-btn1-floating {
+    text-align: center;
+    margin: 0 auto;
+    position: scroll;
+    overflow: hidden;
+     margin-right: 550px;
+    margin-top: 300px;
+}*/
+.animation1 button{
+            position: scroll;
+            display: block;
+            border-radius: 500px;
+            padding: 1px;
+            margin:0 auto;
+            margin-top: 10px;
+               margin-bottom: 10px;
+            width:100px;
+            overflow:hidden;
+        }
+.animation2 button{
+            position: relative;
+            display: block;
+            border-radius: 500px;
+         
+            padding: 1px;
+            margin: 0 auto;
+            width: 100px;
+            overflow:hidden;
+}
+ .mySlides {
+    position: relative;
+    overflow: hidden;
+    text-align:center;
+    display:block;
+}
+img {
+            border-radius: 20%;
+            border-style: solid;
+            box-shadow: 10px 10px 5px #888888;
+        }
+.buttons{
+    text-align: center;
+    padding: 10px;
+    position: scroll;
+    top: 800px;
+    float: bottom;
+}
+button {
+    padding: 10px;
+}
+        h2{
+            font-style: italic;
+            color: maroon;
+            text-shadow: 2px 2px white;
+        }
+    
+        body {
+            background-image: url("../pics/images/backg.JPG");
+            background-size: 50%;
+            background-position: absolute;
+            top: 0;
+            left: 0;
+        }
+</style>
+    </head>
+    <body>
+        <h1>Welcome to Eshal's Gallery</h1>
+        <p> Here you will see Eshal's and Her family's pictures.</p>
+        
+        <!--<div id = "mom">
+            <marquee behavior = "scroll" direction = "up">
+                
+                <img src="../pics/IMG_0793.JPG" width="200" height="200" alt="Flying Bee" class="rotate">
+                    </marquee> </div>
+        
+        -->
+        
+<!--<div class="w3-content">-->
+
+<div class="images">
+    
+<!--with grandmother -->
+    <div class ="mySlides">
+    <div class = "text">
+        
+    <h2>Eshal With Her Nano (Grand Mother)</h2>
+    <img src="../pics/images/withnano.jpg" alt="withgrandmother" height=520px width=500px>
+        
+    </div>
+    </div>
+
+<!--with grandfather -->
+    <div class ="mySlides">
+    <div class = "text">
+    <h2>Eshal With Her Nana (Grand Father)</h2>
+    <img src="../pics/images/withnana.jpg" alt="withgrandfather" height=520px width=500px>
+    </div>
+    </div>
+<!--with abu -->
+    <div class ="mySlides">
+    <div class = "text">
+    <h2>Eshal With Her Handsome Uncle (Abu)</h2>
+    <img src="../pics/images/withabu.jpg" alt="withabu" height=520px width=500px>
+    </div>
+    </div>
+<!--with anam -->
+    <div class ="mySlides">
+    <div class = "text">
+    <h2>Eshal With Her Mother (Anam)</h2>
+    <img src="../pics/images/wanam.jpg" alt="withmother" height=520px width=500px>
+    </div>
+    </div>
+<!--with dad  -->
+    <div class ="mySlides">
+    <div class = "text">
+    <h2>Eshal With Her Dad (Kieran)</h2>
+    <img src="../pics/images/withdad.jpg" alt="withdad" height=520px width=500px>
+    </div>
+    </div>
+<!--with amra -->
+    <div class ="mySlides">
+    <div class = "text">
+    <h2>Eshal With Her Aunty (Amra)</h2>
+    <img src="../pics/images/withamra.jpg" alt="withamra" height=520px width=500px>
+    </div>
+    </div>
+<!--with mary -->
+    <div class ="mySlides">
+    <div class = "text">
+    <h2>Eshal With Her Aunty (Mary)</h2>
+    <img src="../pics/images/withmary.jpg" alt="withmary" height=520px width=500px>
+    </div>
+    </div>
+<!--with sum -->
+    <div class ="mySlides">
+    <div class = "text">
+    <h2>Eshal With Her Aunty (Sum)</h2>
+    <img src="../pics/images/withsum.jpg" alt="withsum" height=520px width=500px>
+    </div>
+    </div>
+</div>
+
+
+<div class = "animations">
+<div class = "animation1" onclick="plusDivs(1)"><button>Next </button></div>
+<div class = "animation2" onclick="plusDivs(-1)"><button>Last</button></div>
+</div>
+<!--<a class="w3-btn-floating" style="position:absolute;top:92%;left:500px" onclick="plusDivs(-1)">&#10094;</a>
+<a class="w3-btn1-floating"  style="position:absolute;top:92%;right:500px" onclick="plusDivs(1)">&#10095;</a>-->
+<!--</div>-->
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+<div class="buttons">
+     <a href="main.html"><button>Click Here For Main Page</button></a>
+     <a href="morepics.html"><button>Click Here For More Images</button></a>
+</div>
+
+    </body>
+</html>

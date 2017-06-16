@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" >
+<title>Editor's 'Contact Form </title>
+<style>
+    body {
+        margin: 0 auto;
+        position: relative;
+    }
+    h1, p{
+        text-align: center;
+    }
+h1{
+    margin-top: 10px;
+    background-color: lightblue;
+}
+form{
+    text-align: center;
+   margin-left: 500px;
+}
+.error{
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <h1>Let's Talk Through Email</h1>
+    <p><span class="error">* requried field.</span></p>
+    <form action="?" method="post">
+        
+            <ul>
+               
+              Full Name: <input type="text" name="name" id="name"/>*
+               <br>  <br>
+               
+               Email:<input type="text" name="email" id="email"/>*
+                <br>  <br>
+                
+                Message: <textarea name="message" rows="10" cols="40" maxlength="300" id="message" placeholder="No more than 300 characters"></textarea>*
+                 <br>   <br>  <br>
+                 
+                <input type="submit" name="submit" value="Submit">
+                
+            </ul>
+     
+    </form>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Editor's Information</title>
+        
+        <script src="../javascript/jquery-1.12.4.min.js"></script>
+        
+        <script type="text/javascript">
+            /*java script code for sliding the information*/
+            $(document).ready(function(){
+                              
+                              $(".contactus").click(function(){
+                                               $(".contactform").slideToggle("slow");
+                                               });
+                              
+                                                          });
+            </script>
+        
+
+        <style>
+            
+      h1 {
+background-color: lightblue;
+margin: 0 auto;
+font-family: 'Times New Roman', Times, serif;
+}
+  /*styles for email*/
+ .email  h2 {
+      
+      padding-top: 10px;
+  }
+  .email h2 em {
+      color: brown;
+      padding-left: 10px;
+    text-shadow: 3px 3px lightgray;
+  }
+  .email p {
+      
+      margin: 1%;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      font-size: medium;
+  }
+  /* styles for phone*/
+  .phone h2 {
+      padding-top:  20px;
+  }
+  .phone h2 em {
+      color: brown;
+      padding-left: 10px;
+    text-shadow: 3px 3px lightgray;
+  }
+  .phone p {
+      
+      margin: 1%;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      font-size: medium;
+      font-weight: normal;
+  }
+
+  /*style for goback button*/
+  .goback h2 {
+     padding-top:  20px;
+
+  }
+  .goback button {
+      color: brown;
+      padding-left: 10px;
+      margin-left: 10px;
+      font-weight: bold ;
+  }
+  .goback p {
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      font-size: medium;
+      font-weight: normal;
+  }
+  .goback fieldset {
+      margin-top: 35px;
+  }
+   .phone fieldset {
+      margin-top: 35px ;
+  }
+   .email fieldset {
+      margin-top: 35px ;
+  }
+  .message p {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 2.5em;
+      font-weight: normal;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      padding: 35px;
+  }
+    .contactus img {
+            position:absolute;
+            top:350px;
+            left:0px;
+            height: 100px;
+            width: 25px;
+        }
+    .contactform{
+            background-color:lightblue;
+            display: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-style:  italic;
+            color: maroon;
+            left: 0;
+            top: 0;
+            position: absolute;
+
+            width: 100%;
+    }
+        body{
+            text-align: center;
+        }
+        
+        .error{
+            color: red;
+        }
+            </style>
+        
+    </head>
+    
+    <body>
+    
+    <h1>Contact Information</h1>
+       
+       <div class = "email"> 
+           <fieldset>
+          <h2> <img src = "../pics/email-logo1.jpg" alt="email_logo" width = 70 height = 50> <em>By Email</em></h2>
+         
+           <p>Have a Question,comment,or idea? Send us an email at <strong>buttabu@yahoo.com<strong></p>
+       </fieldset>
+       </div>
+
+      
+        <div class = "phone">
+            <fieldset>
+           <h2><img src="../pics/phone-logo.png" alt="phone-logo" width = 70 height = 50><em>By Phone</em></h2>
+           <p> Call us anytime at <a href="tel:+19172940273"><strong>1917-294-0273</strong></a></p>
+        </fieldset>  </div>
+       
+       <div class = "goback">
+           <fieldset>
+        <h2><img src="../pics/cont_gb.jpg" alt="Go back to Main Menu" width=70 height="50"><a href="main.html"><button>Click Here</button></a></h2>
+        <p>Click on the button to go back to <em>main page</em></p>
+        </fieldset> </div>
+
+
+        <h3 class="contactus" >
+
+        <img src = "../pics/contact.png" alt = "Conatct Image">
+        </h3>
+        <div class = "contactform">
+            <div class="message">
+                <p><strong>Thanks for contacting us</strong></p>
+                <p><span class="error">* requried field.</span></p>
+            </div>
+        <form action="?" method="post">
+            
+       
+            
+            <ul>
+                Full Name (*) <br>
+                <input type="text" name="name" id="name"/>
+                <br>  <br>
+                
+                Email (*)<br>
+                <input type="text" name="email" id="email"/>
+                <br>  <br>
+                
+                Message (*)<br>
+                <textarea name="message" rows="10" cols="20" maxlength="300" id="message" placeholder="No more than 300 characters"></textarea>
+                <br>   <br>  <br>
+                
+                <input type="submit" name="submit" value="Submit">
+                    </ul>
+        </form>
+</div>
+        
+ 
+    </body>
+</html>
